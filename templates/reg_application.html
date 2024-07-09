@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Application</title>
+    </head>
+    <body>
+        <button onclick="goback()">Go Back to Home</button>
+
+        <h1>Welcome to the School Registration System</h1>
+        <br>
+        <form action='/registration_submit'>
+            <label for="fname" >First Name of Student</label>
+            <input id="fname" name="fname" type="text" for="fname" class="response" required>
+            <br>
+
+            <label for="lname">Last Name of Student</label>
+            <input id="lname" name="lname" type="text" for="lname" class="response" required>
+            <br>
+
+            <label for="grade">Grade</label>
+            <input id="grade" name="grade" type="number" for="grade" class="response" required>
+            <br>
+
+            <label for="gender">Gender of Student</label>
+            <input id="gender" name="gender" type="text" for="gender" class="response" required>
+            <br>
+
+            <label for="height">Height of Student</label>
+            <input id="height" name="height" type="text" for="height" class="response" required>
+            <br>
+
+            <label for="address">Address of Student</label>
+            <input id="address" name="address" type="text" for="address" class="response" required>
+            <br>
+
+            <label for="major">Intended Major of Student</label>
+            <input id="major" name="major" type="text" for="major" class="response" placeholder="Can change during school year" required>
+            <br>
+            
+            <input type="submit" value="submit">
+            
+        </form>        
+
+        
+        <script>
+            function goback() {
+            
+                location.replace("main.html")
+            
+            }
+            
+            
+
+        </script>        
+        
+    </body>
+</html>
+

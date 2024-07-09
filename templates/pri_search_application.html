@@ -1,0 +1,38 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <button onclick="goback()">Go Back to Home</button>
+        <br>
+
+    <form action="/private_search_submit">
+
+        <label for="fname">First Name of Student</label>
+        <input type="text" name="fname" for="fname" class="response" required>
+        <br>
+
+        <label for="lname">Last Name of Student</label>
+        <input type="text" name="lname" for="lname" class="response" required>
+        <br>
+
+        <label for="grade">Current Grade of Student</label>
+        <input type="number" name="grade" for="grade" class="response" placeholder="2024-2025 School Year" required>
+        <br>
+
+        <label for="major">Intended Major of Student</label>
+        <input type="text" name="major" for="major" class="response" placeholder="Can change during school year" required>
+        <br>
+
+        <input type="submit" value="submit">
+        
+    </form>
+        <script>
+            function goback() {
+            
+                location.replace("main.html")
+            
+            }
+        </script>
+    </body>
+</html>
